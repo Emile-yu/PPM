@@ -44,10 +44,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             UIScreen.main.bounds.size.height == 1366.0{
             monTerminal = terminalType.ipadpro
         }
-        
+        //MastreController
         let svc = UISplitViewController()
         let mvc = MasterViewController(style: .plain)
         let mnvc = UINavigationController(rootViewController: mvc)
+        
+        //DetailController
         let dvc = DetailViewController()
         let dnvc = UINavigationController(rootViewController: dvc)
         mvc.svc = svc
